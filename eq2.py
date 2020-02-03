@@ -33,6 +33,10 @@ data=[{
     'lat':lats,
     'marker':{
         'size':[5*mag for mag in mags], #this is the same as: for mag in mags: mag*=5; mags.append(mags)
+        'color':mags,
+        'colorscale':'Viridis',
+        'reversescale':True,
+        'colorbar':{'title':'Magnitutde'}
     }
 }]
 
